@@ -1,0 +1,24 @@
+{
+  "name": "OpenDots",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:24",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "moby": true
+    }
+  },
+  "forwardPorts": [4310, 5173],
+  "portsAttributes": {
+    "4310": {
+      "label": "OpenDots",
+      "onAutoForward": "openBrowser"
+    },
+    "5173": {
+      "label": "OpenDots Dev",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "hostRequirements": {
+    "cpus": 4
+  }
+}
