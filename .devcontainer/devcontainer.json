@@ -1,12 +1,6 @@
 {
   "name": "OpenDots",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:24",
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "version": "latest",
-      "moby": true
-    }
-  },
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
   "forwardPorts": [4310, 5173],
   "portsAttributes": {
     "4310": {
